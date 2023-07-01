@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	kaddht "github.com/libp2p/go-libp2p-kad-dht"
-	"github.com/libp2p/go-libp2p-kad-dht/crawler"
-	"github.com/libp2p/go-libp2p-kad-dht/providers"
+	kaddht "github.com/mikelsr/go-libp2p-kad-dht"
+	"github.com/mikelsr/go-libp2p-kad-dht/crawler"
+	"github.com/mikelsr/go-libp2p-kad-dht/providers"
 )
 
 type config struct {

@@ -5,10 +5,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/libp2p/go-libp2p/core/network"
+	"github.com/mikelsr/go-libp2p/core/network"
 	"github.com/stretchr/testify/require"
 
-	mocknet "github.com/libp2p/go-libp2p/p2p/net/mock"
+	mocknet "github.com/mikelsr/go-libp2p/p2p/net/mock"
 )
 
 func TestInvalidRemotePeers(t *testing.T) {

@@ -7,12 +7,12 @@ import (
 	"fmt"
 
 	logging "github.com/ipfs/go-log"
-	recpb "github.com/libp2p/go-libp2p-record/pb"
-	"github.com/libp2p/go-libp2p/core/host"
-	"github.com/libp2p/go-libp2p/core/peer"
+	recpb "github.com/mikelsr/go-libp2p-record/pb"
+	"github.com/mikelsr/go-libp2p/core/host"
+	"github.com/mikelsr/go-libp2p/core/peer"
 	"github.com/multiformats/go-multihash"
 
-	"github.com/libp2p/go-libp2p-kad-dht/internal"
+	"github.com/mikelsr/go-libp2p-kad-dht/internal"
 )
 
 var logger = logging.Logger("dht")

@@ -14,10 +14,10 @@ import (
 	"github.com/ipfs/go-datastore/autobatch"
 	dsq "github.com/ipfs/go-datastore/query"
 	logging "github.com/ipfs/go-log"
-	"github.com/libp2p/go-libp2p-kad-dht/internal"
-	"github.com/libp2p/go-libp2p/core/peer"
-	"github.com/libp2p/go-libp2p/core/peerstore"
-	peerstoreImpl "github.com/libp2p/go-libp2p/p2p/host/peerstore"
+	"github.com/mikelsr/go-libp2p-kad-dht/internal"
+	"github.com/mikelsr/go-libp2p/core/peer"
+	"github.com/mikelsr/go-libp2p/core/peerstore"
+	peerstoreImpl "github.com/mikelsr/go-libp2p/p2p/host/peerstore"
 	"github.com/multiformats/go-base32"
 )
 

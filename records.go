@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/libp2p/go-libp2p-kad-dht/internal"
-	ci "github.com/libp2p/go-libp2p/core/crypto"
-	"github.com/libp2p/go-libp2p/core/peer"
-	"github.com/libp2p/go-libp2p/core/routing"
+	"github.com/mikelsr/go-libp2p-kad-dht/internal"
+	ci "github.com/mikelsr/go-libp2p/core/crypto"
+	"github.com/mikelsr/go-libp2p/core/peer"
+	"github.com/mikelsr/go-libp2p/core/routing"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/trace"
 )

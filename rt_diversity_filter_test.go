@@ -5,10 +5,10 @@ import (
 	"testing"
 	"time"
 
-	kb "github.com/libp2p/go-libp2p-kbucket"
-	"github.com/libp2p/go-libp2p-kbucket/peerdiversity"
-	bhost "github.com/libp2p/go-libp2p/p2p/host/basic"
-	swarmt "github.com/libp2p/go-libp2p/p2p/net/swarm/testing"
+	kb "github.com/mikelsr/go-libp2p-kbucket"
+	"github.com/mikelsr/go-libp2p-kbucket/peerdiversity"
+	bhost "github.com/mikelsr/go-libp2p/p2p/host/basic"
+	swarmt "github.com/mikelsr/go-libp2p/p2p/net/swarm/testing"
 
 	"github.com/stretchr/testify/require"
 )

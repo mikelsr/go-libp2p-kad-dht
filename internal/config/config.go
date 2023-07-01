@@ -4,15 +4,15 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ipfs/boxo/ipns"
 	ds "github.com/ipfs/go-datastore"
 	dssync "github.com/ipfs/go-datastore/sync"
-	"github.com/libp2p/go-libp2p-kad-dht/providers"
-	"github.com/libp2p/go-libp2p-kbucket/peerdiversity"
-	record "github.com/libp2p/go-libp2p-record"
-	"github.com/libp2p/go-libp2p/core/host"
-	"github.com/libp2p/go-libp2p/core/peer"
-	"github.com/libp2p/go-libp2p/core/protocol"
+	"github.com/mikelsr/boxo/ipns"
+	"github.com/mikelsr/go-libp2p-kad-dht/providers"
+	"github.com/mikelsr/go-libp2p-kbucket/peerdiversity"
+	record "github.com/mikelsr/go-libp2p-record"
+	"github.com/mikelsr/go-libp2p/core/host"
+	"github.com/mikelsr/go-libp2p/core/peer"
+	"github.com/mikelsr/go-libp2p/core/protocol"
 	ma "github.com/multiformats/go-multiaddr"
 )
 

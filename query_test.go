@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	tu "github.com/libp2p/go-libp2p-testing/etc"
+	tu "github.com/mikelsr/go-libp2p-testing/etc"
 
 	"github.com/stretchr/testify/require"
 )

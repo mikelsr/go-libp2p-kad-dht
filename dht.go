@@ -8,27 +8,27 @@ import (
 	"sync"
 	"time"
 
-	"github.com/libp2p/go-libp2p/core/host"
-	"github.com/libp2p/go-libp2p/core/network"
-	"github.com/libp2p/go-libp2p/core/peer"
-	"github.com/libp2p/go-libp2p/core/peerstore"
-	"github.com/libp2p/go-libp2p/core/protocol"
-	"github.com/libp2p/go-libp2p/core/routing"
+	"github.com/mikelsr/go-libp2p/core/host"
+	"github.com/mikelsr/go-libp2p/core/network"
+	"github.com/mikelsr/go-libp2p/core/peer"
+	"github.com/mikelsr/go-libp2p/core/peerstore"
+	"github.com/mikelsr/go-libp2p/core/protocol"
+	"github.com/mikelsr/go-libp2p/core/routing"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/trace"
 
-	"github.com/libp2p/go-libp2p-kad-dht/internal"
-	dhtcfg "github.com/libp2p/go-libp2p-kad-dht/internal/config"
-	"github.com/libp2p/go-libp2p-kad-dht/internal/net"
-	"github.com/libp2p/go-libp2p-kad-dht/metrics"
-	"github.com/libp2p/go-libp2p-kad-dht/netsize"
-	pb "github.com/libp2p/go-libp2p-kad-dht/pb"
-	"github.com/libp2p/go-libp2p-kad-dht/providers"
-	"github.com/libp2p/go-libp2p-kad-dht/rtrefresh"
-	kb "github.com/libp2p/go-libp2p-kbucket"
-	"github.com/libp2p/go-libp2p-kbucket/peerdiversity"
-	record "github.com/libp2p/go-libp2p-record"
-	recpb "github.com/libp2p/go-libp2p-record/pb"
+	"github.com/mikelsr/go-libp2p-kad-dht/internal"
+	dhtcfg "github.com/mikelsr/go-libp2p-kad-dht/internal/config"
+	"github.com/mikelsr/go-libp2p-kad-dht/internal/net"
+	"github.com/mikelsr/go-libp2p-kad-dht/metrics"
+	"github.com/mikelsr/go-libp2p-kad-dht/netsize"
+	pb "github.com/mikelsr/go-libp2p-kad-dht/pb"
+	"github.com/mikelsr/go-libp2p-kad-dht/providers"
+	"github.com/mikelsr/go-libp2p-kad-dht/rtrefresh"
+	kb "github.com/mikelsr/go-libp2p-kbucket"
+	"github.com/mikelsr/go-libp2p-kbucket/peerdiversity"
+	record "github.com/mikelsr/go-libp2p-record"
+	recpb "github.com/mikelsr/go-libp2p-record/pb"
 
 	"github.com/gogo/protobuf/proto"
 	ds "github.com/ipfs/go-datastore"
@@ -500,7 +500,7 @@ func (dht *IpfsDHT) fixLowPeers() {
 	// TODO Active Bootstrapping
 	// We should first use non-bootstrap peers we knew of from previous
 	// snapshots of the Routing Table before we connect to the bootstrappers.
-	// See https://github.com/libp2p/go-libp2p-kad-dht/issues/387.
+	// See https://github.com/mikelsr/go-libp2p-kad-dht/issues/387.
 	if dht.routingTable.Size() == 0 && dht.bootstrapPeers != nil {
 		bootstrapPeers := dht.bootstrapPeers()
 		if len(bootstrapPeers) == 0 {
@@ -545,7 +545,7 @@ func (dht *IpfsDHT) fixLowPeers() {
 }
 
 // TODO This is hacky, horrible and the programmer needs to have his mother called a hamster.
-// SHOULD be removed once https://github.com/libp2p/go-libp2p/issues/800 goes in.
+// SHOULD be removed once https://github.com/mikelsr/go-libp2p/issues/800 goes in.
 func (dht *IpfsDHT) persistRTPeersInPeerStore() {
 	tickr := time.NewTicker(peerstore.RecentlyConnectedAddrTTL / 3)
 	defer tickr.Stop()

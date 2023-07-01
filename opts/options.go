@@ -6,8 +6,8 @@ import (
 	"time"
 
 	ds "github.com/ipfs/go-datastore"
-	dht "github.com/libp2p/go-libp2p-kad-dht"
-	record "github.com/libp2p/go-libp2p-record"
+	dht "github.com/mikelsr/go-libp2p-kad-dht"
+	record "github.com/mikelsr/go-libp2p-record"
 )
 
 type Option = dht.Option

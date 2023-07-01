@@ -5,12 +5,12 @@ import (
 	"testing"
 	"time"
 
-	dhtcfg "github.com/libp2p/go-libp2p-kad-dht/internal/config"
-	"github.com/libp2p/go-libp2p-kad-dht/providers"
-	"github.com/libp2p/go-libp2p-kbucket/peerdiversity"
-	record "github.com/libp2p/go-libp2p-record"
-	"github.com/libp2p/go-libp2p/core/peer"
-	"github.com/libp2p/go-libp2p/core/protocol"
+	dhtcfg "github.com/mikelsr/go-libp2p-kad-dht/internal/config"
+	"github.com/mikelsr/go-libp2p-kad-dht/providers"
+	"github.com/mikelsr/go-libp2p-kbucket/peerdiversity"
+	record "github.com/mikelsr/go-libp2p-record"
+	"github.com/mikelsr/go-libp2p/core/peer"
+	"github.com/mikelsr/go-libp2p/core/protocol"
 
 	ds "github.com/ipfs/go-datastore"
 	ma "github.com/multiformats/go-multiaddr"

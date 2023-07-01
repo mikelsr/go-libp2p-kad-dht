@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/libp2p/go-libp2p-kad-dht/netsize"
-	"github.com/libp2p/go-libp2p/core/peer"
+	"github.com/mikelsr/go-libp2p-kad-dht/netsize"
+	"github.com/mikelsr/go-libp2p/core/peer"
 )
 
 func randInt(rng *rand.Rand, n, except int) int {

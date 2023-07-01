@@ -14,13 +14,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/libp2p/go-libp2p/core/crypto"
-	"github.com/libp2p/go-libp2p/core/event"
-	"github.com/libp2p/go-libp2p/core/network"
-	"github.com/libp2p/go-libp2p/core/peer"
-	"github.com/libp2p/go-libp2p/core/peerstore"
-	"github.com/libp2p/go-libp2p/core/protocol"
-	"github.com/libp2p/go-libp2p/core/routing"
+	"github.com/mikelsr/go-libp2p/core/crypto"
+	"github.com/mikelsr/go-libp2p/core/event"
+	"github.com/mikelsr/go-libp2p/core/network"
+	"github.com/mikelsr/go-libp2p/core/peer"
+	"github.com/mikelsr/go-libp2p/core/peerstore"
+	"github.com/mikelsr/go-libp2p/core/protocol"
+	"github.com/mikelsr/go-libp2p/core/routing"
 	ma "github.com/multiformats/go-multiaddr"
 	manet "github.com/multiformats/go-multiaddr/net"
 	"github.com/multiformats/go-multihash"
@@ -29,16 +29,16 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	test "github.com/libp2p/go-libp2p-kad-dht/internal/testing"
-	pb "github.com/libp2p/go-libp2p-kad-dht/pb"
+	test "github.com/mikelsr/go-libp2p-kad-dht/internal/testing"
+	pb "github.com/mikelsr/go-libp2p-kad-dht/pb"
 
-	u "github.com/ipfs/boxo/util"
 	"github.com/ipfs/go-cid"
 	detectrace "github.com/ipfs/go-detect-race"
-	kb "github.com/libp2p/go-libp2p-kbucket"
-	record "github.com/libp2p/go-libp2p-record"
-	bhost "github.com/libp2p/go-libp2p/p2p/host/basic"
-	swarmt "github.com/libp2p/go-libp2p/p2p/net/swarm/testing"
+	u "github.com/mikelsr/boxo/util"
+	kb "github.com/mikelsr/go-libp2p-kbucket"
+	record "github.com/mikelsr/go-libp2p-record"
+	bhost "github.com/mikelsr/go-libp2p/p2p/host/basic"
+	swarmt "github.com/mikelsr/go-libp2p/p2p/net/swarm/testing"
 )
 
 var testCaseCids []cid.Cid
@@ -388,7 +388,7 @@ func TestValueSetInvalid(t *testing.T) {
 }
 
 func TestContextShutDown(t *testing.T) {
-	t.Skip("This test is flaky, see https://github.com/libp2p/go-libp2p-kad-dht/issues/724.")
+	t.Skip("This test is flaky, see https://github.com/mikelsr/go-libp2p-kad-dht/issues/724.")
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()
 
@@ -413,7 +413,7 @@ func TestContextShutDown(t *testing.T) {
 }
 
 func TestSearchValue(t *testing.T) {
-	t.Skip("This test is flaky, see https://github.com/libp2p/go-libp2p-kad-dht/issues/723.")
+	t.Skip("This test is flaky, see https://github.com/mikelsr/go-libp2p-kad-dht/issues/723.")
 
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()

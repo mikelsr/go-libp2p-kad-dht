@@ -8,15 +8,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/libp2p/go-libp2p/core/peer"
-	"github.com/libp2p/go-libp2p/p2p/host/peerstore/pstoremem"
+	"github.com/mikelsr/go-libp2p/core/peer"
+	"github.com/mikelsr/go-libp2p/p2p/host/peerstore/pstoremem"
 
 	mh "github.com/multiformats/go-multihash"
 
-	u "github.com/ipfs/boxo/util"
 	ds "github.com/ipfs/go-datastore"
 	dsq "github.com/ipfs/go-datastore/query"
 	dssync "github.com/ipfs/go-datastore/sync"
+	u "github.com/mikelsr/boxo/util"
 	//
 	// used by TestLargeProvidersSet: do not remove
 	// lds "github.com/ipfs/go-ds-leveldb"
@@ -146,7 +146,7 @@ func TestProvidersSerialization(t *testing.T) {
 }
 
 func TestProvidesExpire(t *testing.T) {
-	t.Skip("This test is flaky, see https://github.com/libp2p/go-libp2p-kad-dht/issues/725.")
+	t.Skip("This test is flaky, see https://github.com/mikelsr/go-libp2p-kad-dht/issues/725.")
 
 	pval := ProvideValidity
 	cleanup := defaultCleanupInterval

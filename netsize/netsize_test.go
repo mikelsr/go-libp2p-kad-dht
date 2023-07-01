@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	kbucket "github.com/libp2p/go-libp2p-kbucket"
-	pt "github.com/libp2p/go-libp2p/core/test"
+	kbucket "github.com/mikelsr/go-libp2p-kbucket"
+	pt "github.com/mikelsr/go-libp2p/core/test"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	ks "github.com/whyrusleeping/go-keyspace"

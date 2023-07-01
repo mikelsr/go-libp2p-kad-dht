@@ -6,16 +6,16 @@ import (
 	"testing"
 	"time"
 
-	"github.com/libp2p/go-libp2p/core/test"
+	"github.com/mikelsr/go-libp2p/core/test"
 
-	kb "github.com/libp2p/go-libp2p-kbucket"
-	pstore "github.com/libp2p/go-libp2p/p2p/host/peerstore"
+	kb "github.com/mikelsr/go-libp2p-kbucket"
+	pstore "github.com/mikelsr/go-libp2p/p2p/host/peerstore"
 
 	"github.com/stretchr/testify/require"
 )
 
 func TestSkipRefreshOnGapCpls(t *testing.T) {
-	t.Skip("This test is flaky, see https://github.com/libp2p/go-libp2p-kad-dht/issues/722.")
+	t.Skip("This test is flaky, see https://github.com/mikelsr/go-libp2p-kad-dht/issues/722.")
 
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()

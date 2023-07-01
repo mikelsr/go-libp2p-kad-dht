@@ -5,17 +5,17 @@ import (
 	"sync"
 	"time"
 
-	"github.com/libp2p/go-libp2p/core/host"
-	"github.com/libp2p/go-libp2p/core/network"
-	"github.com/libp2p/go-libp2p/core/peer"
-	"github.com/libp2p/go-libp2p/core/protocol"
+	"github.com/mikelsr/go-libp2p/core/host"
+	"github.com/mikelsr/go-libp2p/core/network"
+	"github.com/mikelsr/go-libp2p/core/peer"
+	"github.com/mikelsr/go-libp2p/core/protocol"
 
 	logging "github.com/ipfs/go-log"
 	//lint:ignore SA1019 TODO migrate away from gogo pb
 	"github.com/libp2p/go-msgio/protoio"
 
-	pb "github.com/libp2p/go-libp2p-kad-dht/pb"
-	kbucket "github.com/libp2p/go-libp2p-kbucket"
+	pb "github.com/mikelsr/go-libp2p-kad-dht/pb"
+	kbucket "github.com/mikelsr/go-libp2p-kbucket"
 )
 
 var (

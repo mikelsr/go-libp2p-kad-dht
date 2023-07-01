@@ -11,7 +11,7 @@ import (
 
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
-	pb "github.com/libp2p/go-libp2p-record/pb"
+	pb "github.com/mikelsr/go-libp2p-record/pb"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

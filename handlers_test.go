@@ -9,11 +9,11 @@ import (
 	"time"
 
 	proto "github.com/gogo/protobuf/proto"
-	"github.com/libp2p/go-libp2p"
-	pb "github.com/libp2p/go-libp2p-kad-dht/pb"
-	recpb "github.com/libp2p/go-libp2p-record/pb"
-	crypto "github.com/libp2p/go-libp2p/core/crypto"
-	peer "github.com/libp2p/go-libp2p/core/peer"
+	"github.com/mikelsr/go-libp2p"
+	pb "github.com/mikelsr/go-libp2p-kad-dht/pb"
+	recpb "github.com/mikelsr/go-libp2p-record/pb"
+	crypto "github.com/mikelsr/go-libp2p/core/crypto"
+	peer "github.com/mikelsr/go-libp2p/core/peer"
 	ma "github.com/multiformats/go-multiaddr"
 )
 
