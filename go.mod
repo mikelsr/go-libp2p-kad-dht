@@ -14,7 +14,7 @@ require (
 	github.com/ipfs/go-log v1.0.5
 	github.com/libp2p/go-msgio v0.3.0
 	github.com/libp2p/go-netroute v0.2.1
-	github.com/mikelsr/boxo v0.10.3-0.20230701155919-a38c4a3f9c07
+	github.com/mikelsr/boxo v0.10.3-0.20230701161542-9ed0c8405ea2
 	github.com/mikelsr/go-libp2p v0.28.1-0.20230701150814-14dbb6aaeb77
 	github.com/mikelsr/go-libp2p-kbucket v0.0.0-20230701152249-5c470d470ff4
 	github.com/mikelsr/go-libp2p-record v0.0.0-20230701152456-8c9f0e592b0e
