@@ -15,12 +15,12 @@ require (
 	github.com/libp2p/go-msgio v0.3.0
 	github.com/libp2p/go-netroute v0.2.1
 	github.com/mikelsr/boxo v0.10.3-0.20230701161542-9ed0c8405ea2
-	github.com/mikelsr/go-libp2p v0.28.1-0.20230701150814-14dbb6aaeb77
-	github.com/mikelsr/go-libp2p-kbucket v0.0.0-20230701152249-5c470d470ff4
-	github.com/mikelsr/go-libp2p-record v0.0.0-20230701152456-8c9f0e592b0e
+	github.com/mikelsr/go-libp2p v0.28.1-0.20230701164104-d35ccfab977a
+	github.com/mikelsr/go-libp2p-kbucket v0.0.0-20230701163456-27d7aa5e0cf7
+	github.com/mikelsr/go-libp2p-record v0.0.0-20230701163244-56eb7b40ba15
 	github.com/mikelsr/go-libp2p-routing-helpers v0.0.0-20230701152654-b21f8d2876ae
-	github.com/mikelsr/go-libp2p-testing v0.12.1-0.20230701144900-4a2e31d819f6
-	github.com/mikelsr/go-libp2p-xor v0.0.0-20230701153308-6d92eca1f0f4
+	github.com/mikelsr/go-libp2p-testing v0.12.1-0.20230701164002-d7b68d0821b4
+	github.com/mikelsr/go-libp2p-xor v0.0.0-20230701163701-7c0865965477
 	github.com/multiformats/go-base32 v0.1.0
 	github.com/multiformats/go-multiaddr v0.9.0
 	github.com/multiformats/go-multibase v0.2.0
@@ -52,13 +52,14 @@ require (
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-task/slim-sprig v0.0.0-20230315185526-52ccab3ef572 // indirect
 	github.com/godbus/dbus/v5 v5.1.0 // indirect
+	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
 	github.com/golang/mock v1.6.0 // indirect
 	github.com/golang/protobuf v1.5.3 // indirect
 	github.com/google/pprof v0.0.0-20230602150820-91b7bce49751 // indirect
+	github.com/gopherjs/gopherjs v0.0.0-20190430165422-3e4dfb77656c // indirect
 	github.com/gorilla/websocket v1.5.0 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
 	github.com/huin/goupnp v1.2.0 // indirect
-	github.com/ipfs/boxo v0.10.2 // indirect
 	github.com/ipfs/go-log/v2 v2.5.1 // indirect
 	github.com/ipld/go-ipld-prime v0.20.0 // indirect
 	github.com/jackpal/go-nat-pmp v1.0.2 // indirect
@@ -79,6 +80,7 @@ require (
 	github.com/matttproud/golang_protobuf_extensions v1.0.4 // indirect
 	github.com/miekg/dns v1.1.55 // indirect
 	github.com/mikelsr/quic-go v0.36.1-0.20230701132136-1d9415b66898 // indirect
+	github.com/mikelsr/webtransport-go v0.0.0-20230701162752-682cdbbd920e // indirect
 	github.com/mikioh/tcpinfo v0.0.0-20190314235526-30a79bb1804b // indirect
 	github.com/mikioh/tcpopt v0.0.0-20190314235656-172688c1accc // indirect
 	github.com/minio/sha256-simd v1.0.1 // indirect
@@ -100,10 +102,7 @@ require (
 	github.com/prometheus/common v0.44.0 // indirect
 	github.com/prometheus/procfs v0.11.0 // indirect
 	github.com/quic-go/qpack v0.4.0 // indirect
-	github.com/quic-go/qtls-go1-19 v0.3.2 // indirect
 	github.com/quic-go/qtls-go1-20 v0.3.0 // indirect
-	github.com/quic-go/quic-go v0.36.0 // indirect
-	github.com/quic-go/webtransport-go v0.5.3 // indirect
 	github.com/raulk/go-watchdog v1.3.0 // indirect
 	github.com/spaolacci/murmur3 v1.1.0 // indirect
 	go.opentelemetry.io/otel/metric v1.16.0 // indirect
